@@ -51,8 +51,9 @@ const Home = ()=>{
 					<div className="content1">
 						<p>Tile Roof with Gable Design, Specialize by Everglory Roof</p>
 					</div>
-					<div className="content1"><Link to='#'>Read More &#10146;</Link></div>
+					<div className="content1"><Link to='/roof'>Read More &#10146;</Link></div>
 				</div>
+
 				<div className="item-float2">
 					<div className="content2"><img src={Images.pvc} alt=""/></div>
 					<div className="content2">
@@ -61,8 +62,9 @@ const Home = ()=>{
 					<div className="content2">
 						<p>PVC ceiling Design, Interior and Exterior with Quality materials specialize by WorldWide</p>
 					</div>
-					<div className="content2"><Link to='#'>Read More &#10146;</Link></div>
+					<div className="content2"><Link to='/cladding'>Read More &#10146;</Link></div>
 				</div>
+
 				<div className="item-float3">
 					<div className="content3"><img src={Images.cladding} alt=""/></div>
 					<div className="content3">
@@ -71,8 +73,9 @@ const Home = ()=>{
 					<div className="content3">
 						<p>High quality cladding's, good for interior and exterior wall's</p>
 					</div>
-					<div className="content3"><Link to='#'>Read More &#10146;</Link></div>
+					<div className="content3"><Link to='cladding'>Read More &#10146;</Link></div>
 				</div>
+
 				<div className="item-float4">
 					<div className="content4"><img src={Images.furnitures} alt=""/></div>
 					<div className="content4">
@@ -81,8 +84,9 @@ const Home = ()=>{
 					<div className="content4">
 						<p>Let's start counting sheeps, Exquisite design combined with functionalities,</p>
 					</div>
-					<div className="content4"><Link to='#'>Read More &#10146;</Link></div>
+					<div className="content4"><Link to='/chairs'>Read More &#10146;</Link></div>
 				</div>
+
 			</div>
 		</div>
 	

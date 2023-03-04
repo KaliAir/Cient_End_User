@@ -4,42 +4,13 @@ import Images from '../images/index'
 import {NavLink, Link} from 'react-router-dom'
 import ModalForm from './ModalForm'
 import {TbBuildingWarehouse} from 'react-icons/tb'
-// import '../Fireworks.css'
+import {useImages} from '../Context/ImagesContext'
+
 
 
 const Header = ()=>{
 
-// 	const [fireworks, setFireworks] = useState([]);
-
-  // function handleFire(event) {
-  //   // Prevent the default link behavior
-  //   event.preventDefault();
-
-  //   // Add the fireworks animation elements to the state
-  //   const fireworksElements = [];
-  //   for (let i = 0; i < 20; i++) {
-  //     fireworksElements.push(
-  //       <div
-  //         key={i}
-  //         className="firework"
-  //         style={{
-  //           left: `${Math.random() * 100}%`,
-  //           top: `${Math.random() * 100}%`,
-  //           animationDelay: `${Math.random() * 0.5}s`,
-  //         }}
-  //       />
-  //     );
-  //   }
-    
-  //   setFireworks(fireworksElements);
-
-  //   // Remove the fireworks animation elements after the animation completes
-  //   setTimeout(() => {
-  //     setFireworks([]);
-  //   }, 1000);
-  // }
-
-
+    const {handleShow,handleChairs,handleRoof,handleCladding} = useImages()
 	return (
 	
 <nav id="nav">
@@ -59,34 +30,34 @@ const Header = ()=>{
 						<li className="ul1-items">
 							<ul className="design-section1">
 								<li className="section1">Table</li>
-								<li className="section1"><a href="#">Quasis four seater</a></li>
-								<li className="section1"><a href="#">Table mate</a></li>
-								<li className="section1"><a href="#">Multipurpose Coffe Table</a></li>
-								<li className="section1"><a href="#">Osca Center Table</a></li>
+								<li className="section1"><Link to='/tables' onClick={()=>handleShow('table2')}>Quasis four seater</Link></li>
+								<li className="section1"><Link to='/tables' onClick={()=>handleShow('table7')}>Table mate</Link></li>
+								<li className="section1"><Link to='/tables' onClick={()=>handleShow('table9')}> Multipurpose Coffe Table</Link></li>
+								<li className="section1"><Link to='/tables' onClick={()=>handleShow('table10')}> Osca Center Table</Link></li>
 							</ul>
 							<ul className="design-section2">
 								<li className="section2">Chair</li>
-								<li className="section2"><a href="#">Back Rest</a></li>
-								<li className="section2"><a href="#">Ventilation Support</a></li>
-								<li className="section2"><a href="#">Chair Back Support</a></li>
-								<li className="section2"><a href="#">Office Chair</a></li>
+								<li className="section2"><Link to='/chairs' onClick={()=>handleChairs('chair1')}> Back Rest</Link></li>
+								<li className="section2"><Link to='/chairs' onClick={()=>handleChairs('chair8')}> Reading Chair</Link></li>
+								<li className="section2"><Link to='/chairs' onClick={()=>handleChairs('chair5')}> Chair Back Support</Link></li>
+								<li className="section2"><Link to='/chairs' onClick={()=>handleChairs('chair4')}> Office Chair</Link></li>
 							</ul>
 							
 						</li>
 						<li className="ul2-items">
 							<ul className="design-right1">
 								<li className="right1">Roof</li>
-								<li className="right1"><a href="#">Tile Roof</a></li>
-								<li className="right1"><a href="#">Rib Type</a></li>
-								<li className="right1"><a href="#">Mini Rib</a></li>
-								<li className="right1"><a href="#">Asphalt Shingles</a></li>
+								<li className="right1"><Link to='/roof' onClick={()=>handleRoof('roof4')}> Tile Roof</Link></li>
+								<li className="right1"><Link to='/roof' onClick={()=>handleRoof('roof2')}> Rib Type</Link></li>
+								<li className="right1"><Link to='/roof' onClick={()=>handleRoof('roof3')}> Mini Rib</Link></li>
+								<li className="right1"><Link to='/roof' onClick={()=>handleRoof('roof7')}> Asphalt Shingles</Link></li>
 							</ul>
 							<ul className="design-right2">
 								<li className="right2">Cladding</li>
-								<li className="right2"><a href="#">Fluted Panels</a></li>
-								<li className="right2"><a href="#">PVC ceilings</a></li>
-								<li className="right2"><a href="#">WPC cladding</a></li>
-								<li className="right2"><a href="#">SPC cladding</a></li>
+								<li className="right2"><Link to='/cladding' onClick={()=>handleCladding('cladding4')}> Fluted Panels</Link></li>
+								<li className="right2"><Link to='/cladding' onClick={()=>handleCladding('cladding5')}> PVC Floor</Link></li>
+								<li className="right2"><Link to='/cladding' onClick={()=>handleCladding('cladding1')}> WPC cladding</Link></li>
+								<li className="right2"><Link to='/cladding' onClick={()=>handleCladding('cladding2')}> SPC cladding</Link></li>
 							</ul>
 							
 						</li>

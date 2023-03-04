@@ -1,6 +1,6 @@
 
 const Images = {
-	logo: require('./yellow.jpg'),
+	logo: require('./blue.jpg'),
 	pp: require('./my_pp.jpg'),
 	img1: require('./img/1.jpg'),
 	img2: require('./img/2.jpg'),

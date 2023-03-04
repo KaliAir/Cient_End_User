@@ -108,6 +108,7 @@ body {
 
 .logo {
   justify-self: right;
+  padding-right: 10px;
 }
 
 @media (max-width: 1410px) {
@@ -339,10 +340,12 @@ body {
 
 .section1 a:hover {
   color: #60B1AB !important;
+  cursor: pointer;
 }
 
 .section2 a:hover {
   color: #60B1AB !important;
+  cursor: pointer;
 }
 
 
@@ -399,10 +402,12 @@ body {
 
 .right1 a:hover{
   color: #60B1AB !important;
+  cursor: pointer;
 }
 
 .right2 a:hover{
   color: #60B1AB !important;
+  cursor: pointer;
 }
 
 
