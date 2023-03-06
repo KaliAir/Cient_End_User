@@ -34,35 +34,35 @@ const Tables = (props)=>{
 			<div className="table-collection">
 				<span></span>
 				<div className="table-container">
-					<div className="table-items" onClick={()=>handleRoof('roof1')}>
+					<div className="table-items" onClick={()=>handleRoof('roof1','High Rib')}>
 						<img src={Images.roof1} alt=""/>
 					</div>
 
-					<div className="table-items" onClick={()=>handleRoof('roof2')}>
+					<div className="table-items" onClick={()=>handleRoof('roof2','Rib Type')}>
 						<img src={Images.roof2} alt=""/>
 					</div>
 
-					<div className="table-items" onClick={()=>handleRoof('roof3')}>
+					<div className="table-items" onClick={()=>handleRoof('roof3','Mini Rib')}>
 						<img src={Images.roof3} alt=""/>
 					</div>
 
-					<div className="table-items" onClick={()=>handleRoof('roof4')}>
+					<div className="table-items" onClick={()=>handleRoof('roof4','Tile Roof')}>
 						<img src={Images.roof4} alt=""/>
 					</div>
 
-					<div className="table-items" onClick={()=>handleRoof('roof5')}>
+					<div className="table-items" onClick={()=>handleRoof('roof5','Milazzo Tile Type')}>
 						<img src={Images.roof5} alt=""/>
 					</div>
 
-					<div className="table-items" onClick={()=>handleRoof('roof6')}>
+					<div className="table-items" onClick={()=>handleRoof('roof6','Mega Rib')}>
 						<img src={Images.roof6} alt=""/>
 					</div>
 
-					<div className="table-items" onClick={()=>handleRoof('roof7')}>
+					<div className="table-items" onClick={()=>handleRoof('roof7','Asphalt Shingles')}>
 						<img src={Images.roof7} alt=""/>
 					</div>
 
-					<div className="table-items" onClick={()=>handleRoof('roof8')}>
+					<div className="table-items" onClick={()=>handleRoof('roof8','Congcrete Roof Tegula')}>
 						<img src={Images.roof8} alt=""/>
 					</div>
 					

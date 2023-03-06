@@ -34,19 +34,19 @@ const Tables = (props)=>{
 			<div className="table-collection">
 				<span></span>
 				<div className="table-container">
-					<div className="table-items" onClick={()=>handleCladding('cladding1')}>
+					<div className="table-items" onClick={()=>handleCladding('cladding1','WPC Cladding')}>
 						<img src={Images.cladding1} alt=""/>
 					</div>
 
-					<div className="table-items" onClick={()=>handleCladding('cladding2')}>
+					<div className="table-items" onClick={()=>handleCladding('cladding2','SPC Cladding')}>
 						<img src={Images.cladding2} alt=""/>
 					</div>
 
-					<div className="table-items" onClick={()=>handleCladding('cladding4')}>
+					<div className="table-items" onClick={()=>handleCladding('cladding4','Fluted Panels')}>
 						<img src={Images.cladding4} alt=""/>
 					</div>
 
-					<div className="table-items" onClick={()=>handleCladding('cladding5')}>
+					<div className="table-items" onClick={()=>handleCladding('cladding5','PVC Floor')}>
 						<img src={Images.cladding5} alt=""/>
 					</div>
 					

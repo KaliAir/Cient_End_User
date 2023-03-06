@@ -4,7 +4,7 @@ import {useImages} from '../Context/ImagesContext'
 
 function CladdingModal(props) {
 
-  const {cladding} = useImages()
+  const {cladding,claddingName} = useImages()
 
   return (
     <Modal
@@ -17,6 +17,9 @@ function CladdingModal(props) {
       <Modal.Body>
         <img src={require(`../images/cladding/${cladding}.jpg`)} alt=""/>
       </Modal.Body>
+      <Modal.Footer>
+        <span>{claddingName}</span>
+      </Modal.Footer>
     </Modal>
   );
 }

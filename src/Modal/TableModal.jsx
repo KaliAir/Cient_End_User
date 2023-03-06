@@ -4,7 +4,7 @@ import {useImages} from '../Context/ImagesContext'
 
 function TableModal(props) {
 
-  const {images} = useImages()
+  const {images,tableName} = useImages()
 
   return (
     <Modal
@@ -17,6 +17,9 @@ function TableModal(props) {
       <Modal.Body>
         <img src={require(`../images/tables/${images}.jpg`)} alt=""/>
       </Modal.Body>
+      <Modal.Footer>
+        <span>{tableName}</span>
+      </Modal.Footer>
     </Modal>
   );
 }

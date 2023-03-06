@@ -34,39 +34,39 @@ const Tables = (props)=>{
 			<div className="table-collection">
 				<span></span>
 				<div className="table-container">
-					<div className="table-items" onClick={()=>handleChairs('chair1')}>
+					<div className="table-items" onClick={()=>handleChairs('chair1','Back Rest')}>
 						<img src={Images.chair1} alt=""/>
 					</div>
 
-					<div className="table-items" onClick={()=>handleChairs('chair2')}>
+					<div className="table-items" onClick={()=>handleChairs('chair2','Modern Coffe Chair')}>
 						<img src={Images.chair2} alt=""/>
 					</div>
 
-					<div className="table-items" onClick={()=>handleChairs('chair3')}>
+					<div className="table-items" onClick={()=>handleChairs('chair3','Leather Cowboy Couch')}>
 						<img src={Images.chair3} alt=""/>
 					</div>
 
-					<div className="table-items" onClick={()=>handleChairs('chair4')}>
+					<div className="table-items" onClick={()=>handleChairs('chair4','Office Chair')}>
 						<img src={Images.chair4} alt=""/>
 					</div>
 
-					<div className="table-items" onClick={()=>handleChairs('chair5')}>
+					<div className="table-items" onClick={()=>handleChairs('chair5','Chair Back Support')}>
 						<img src={Images.chair5} alt=""/>
 					</div>
 
-					<div className="table-items" onClick={()=>handleChairs('chair6')}>
+					<div className="table-items" onClick={()=>handleChairs('chair6','Mediterranean Blue Chair')}>
 						<img src={Images.chair6} alt=""/>
 					</div>
 
-					<div className="table-items" onClick={()=>handleChairs('chair7')}>
+					<div className="table-items" onClick={()=>handleChairs('chair7','Reading Chair Common')}>
 						<img src={Images.chair7} alt=""/>
 					</div>
 
-					<div className="table-items" onClick={()=>handleChairs('chair8')}>
+					<div className="table-items" onClick={()=>handleChairs('chair8','Reading Chair Boxtype')}>
 						<img src={Images.chair8} alt=""/>
 					</div>
 
-					<div className="table-items" onClick={()=>handleChairs('chair9')}>
+					<div className="table-items" onClick={()=>handleChairs('chair9','Relaxing Chair')}>
 						<img src={Images.chair9} alt=""/>
 					</div>
 					

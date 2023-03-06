@@ -4,7 +4,7 @@ import {useImages} from '../Context/ImagesContext'
 
 function RoofModal(props) {
 
-  const {roof} = useImages()
+  const {roof,roofName} = useImages()
 
   return (
     <Modal
@@ -17,6 +17,9 @@ function RoofModal(props) {
       <Modal.Body>
         <img src={require(`../images/roof/${roof}.jpg`)} alt=""/>
       </Modal.Body>
+      <Modal.Footer>
+        <span>{roofName}</span>
+      </Modal.Footer>
     </Modal>
   );
 }

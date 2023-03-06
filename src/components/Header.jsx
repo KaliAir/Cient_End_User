@@ -30,34 +30,34 @@ const Header = ()=>{
 						<li className="ul1-items">
 							<ul className="design-section1">
 								<li className="section1">Table</li>
-								<li className="section1"><Link to='/tables' onClick={()=>handleShow('table2')}>Quasis four seater</Link></li>
-								<li className="section1"><Link to='/tables' onClick={()=>handleShow('table7')}>Table mate</Link></li>
-								<li className="section1"><Link to='/tables' onClick={()=>handleShow('table9')}> Multipurpose Coffe Table</Link></li>
-								<li className="section1"><Link to='/tables' onClick={()=>handleShow('table10')}> Osca Center Table</Link></li>
+								<li className="section1"><Link to='/tables' onClick={()=>handleShow('table2','Quasis four seater')}>Quasis four seater</Link></li>
+								<li className="section1"><Link to='/tables' onClick={()=>handleShow('table7','Table mate')}>Table mate</Link></li>
+								<li className="section1"><Link to='/tables' onClick={()=>handleShow('table9','Multipurpose Coffe Table')}> Multipurpose Coffe Table</Link></li>
+								<li className="section1"><Link to='/tables' onClick={()=>handleShow('table10','Osca Center Table')}> Osca Center Table</Link></li>
 							</ul>
 							<ul className="design-section2">
 								<li className="section2">Chair</li>
-								<li className="section2"><Link to='/chairs' onClick={()=>handleChairs('chair1')}> Back Rest</Link></li>
-								<li className="section2"><Link to='/chairs' onClick={()=>handleChairs('chair8')}> Reading Chair</Link></li>
-								<li className="section2"><Link to='/chairs' onClick={()=>handleChairs('chair5')}> Chair Back Support</Link></li>
-								<li className="section2"><Link to='/chairs' onClick={()=>handleChairs('chair4')}> Office Chair</Link></li>
+								<li className="section2"><Link to='/chairs' onClick={()=>handleChairs('chair1','Back Rest')}> Back Rest</Link></li>
+								<li className="section2"><Link to='/chairs' onClick={()=>handleChairs('chair8','Reading Chair')}> Reading Chair</Link></li>
+								<li className="section2"><Link to='/chairs' onClick={()=>handleChairs('chair5','Chair Back Support')}> Chair Back Support</Link></li>
+								<li className="section2"><Link to='/chairs' onClick={()=>handleChairs('chair4','Office Chair')}> Office Chair</Link></li>
 							</ul>
 							
 						</li>
 						<li className="ul2-items">
 							<ul className="design-right1">
 								<li className="right1">Roof</li>
-								<li className="right1"><Link to='/roof' onClick={()=>handleRoof('roof4')}> Tile Roof</Link></li>
-								<li className="right1"><Link to='/roof' onClick={()=>handleRoof('roof2')}> Rib Type</Link></li>
-								<li className="right1"><Link to='/roof' onClick={()=>handleRoof('roof3')}> Mini Rib</Link></li>
-								<li className="right1"><Link to='/roof' onClick={()=>handleRoof('roof7')}> Asphalt Shingles</Link></li>
+								<li className="right1"><Link to='/roof' onClick={()=>handleRoof('roof4','Tile Roof')}> Tile Roof</Link></li>
+								<li className="right1"><Link to='/roof' onClick={()=>handleRoof('roof2','Rib Type')}> Rib Type</Link></li>
+								<li className="right1"><Link to='/roof' onClick={()=>handleRoof('roof3','Mini Rib')}> Mini Rib</Link></li>
+								<li className="right1"><Link to='/roof' onClick={()=>handleRoof('roof7','Asphalt Shingles')}> Asphalt Shingles</Link></li>
 							</ul>
 							<ul className="design-right2">
 								<li className="right2">Cladding</li>
-								<li className="right2"><Link to='/cladding' onClick={()=>handleCladding('cladding4')}> Fluted Panels</Link></li>
-								<li className="right2"><Link to='/cladding' onClick={()=>handleCladding('cladding5')}> PVC Floor</Link></li>
-								<li className="right2"><Link to='/cladding' onClick={()=>handleCladding('cladding1')}> WPC cladding</Link></li>
-								<li className="right2"><Link to='/cladding' onClick={()=>handleCladding('cladding2')}> SPC cladding</Link></li>
+								<li className="right2"><Link to='/cladding' onClick={()=>handleCladding('cladding4','Fluted Panels')}> Fluted Panels</Link></li>
+								<li className="right2"><Link to='/cladding' onClick={()=>handleCladding('cladding5','PVC Floor')}> PVC Floor</Link></li>
+								<li className="right2"><Link to='/cladding' onClick={()=>handleCladding('cladding1','WPC Cladding')}> WPC Cladding</Link></li>
+								<li className="right2"><Link to='/cladding' onClick={()=>handleCladding('cladding2','SPC Cladding')}> SPC Cladding</Link></li>
 							</ul>
 							
 						</li>
@@ -78,42 +78,42 @@ const Header = ()=>{
 								<li className="project-img">
 									<img src={Images.d1} className="d-img"/>
 									<h5>Smantha Green</h5>
-									<a href="#">Read More <img src={Images.arrow} className="arrow"/></a>
+									<Link to='/projects'>See More <img src={Images.arrow} className="arrow"/></Link>
 								</li>
 								<li className="project-img">
 									<img src={Images.d2} className="d-img"/>
 									<h5>Stucco White</h5>
-									<a href="#">Read More <img src={Images.arrow} className="arrow"/></a>
+									<a href="#">See More <img src={Images.arrow} className="arrow"/></a>
 								</li>
 								<li className="project-img">
 									<img src={Images.d3} className="d-img"/>
 									<h5>Office White</h5>
-									<a href="#">Read More <img src={Images.arrow}className="arrow"/></a>
+									<a href="#">See More <img src={Images.arrow}className="arrow"/></a>
 								</li>
 								<li className="project-img">
 									<img src={Images.d4} className="d-img"/>
 									<h5>Minimal White</h5>
-									<a href="#">Read More <img src={Images.arrow} className="arrow"/></a>
+									<a href="#">See More <img src={Images.arrow} className="arrow"/></a>
 								</li>
 								<li className="project-img">
 									<img src={Images.d5} className="d-img"/>
 									<h5>Vintage Brown</h5>
-									<a href="#">Read More <img src={Images.arrow} className="arrow"/></a>
+									<a href="#">See More <img src={Images.arrow} className="arrow"/></a>
 								</li>
 								<li className="project-img">
 									<img src={Images.d6} className="d-img"/>
 									<h5>Blue Reflict</h5>
-									<a href="#">Read More <img src={Images.arrow} className="arrow"/></a>
+									<a href="#">See More <img src={Images.arrow} className="arrow"/></a>
 								</li>
 								<li className="project-img">
 									<img src={Images.d7} className="d-img"/>
 									<h5>Stone Bar</h5>
-									<a href="#">Read More <img src={Images.arrow} className="arrow"/></a>
+									<a href="#">See More <img src={Images.arrow} className="arrow"/></a>
 								</li>
 								<li className="project-img">
 									<img src={Images.d8} className="d-img"/>
 									<h5>Summer Beige</h5>
-									<a href="#">Read More <img src={Images.arrow} className="arrow"/></a>
+									<a href="#">See More <img src={Images.arrow} className="arrow"/></a>
 								</li>
 							</ul>
 						</li>
