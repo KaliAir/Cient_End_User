@@ -124,7 +124,7 @@ const Header = ()=>{
 
 				<li className="ul-items"><a href="#home4">About </a></li>
 		
-				<li className="ul-items"><label htmlFor="modal" className="nav-contact-btn"><TbBuildingWarehouse/> Inquiry</label></li>
+				<li className="ul-items"><NavLink to='/inquiryform'><TbBuildingWarehouse/> Inquiry</NavLink></li>
 
 			</ul>
 	

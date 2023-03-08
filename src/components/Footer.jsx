@@ -11,7 +11,7 @@ import {FcAbout} from 'react-icons/fc'
 
 
 const Footer = ()=>{
-	 const API = 'http://localhost:8000/api'
+	const API = 'http://localhost:8000/api'
 	
 	const[name,setName]=useState('')
 	const[lastname,setLastName]=useState('')

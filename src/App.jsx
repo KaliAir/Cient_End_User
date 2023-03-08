@@ -16,6 +16,7 @@ const RoofDesign = lazy(()=> import('./subOutlet/RoofDesign'))
 const WallDesign = lazy(()=> import('./subOutlet/WallDesign'))
 const CeilingDesign = lazy(()=> import('./subOutlet/CeilingDesign'))
 const LandscapeDesign = lazy(()=> import('./subOutlet/LandscapeDesign'))
+const InquiryForm = lazy(()=> import('./pages/Inquiry'))
 
 
 
@@ -34,6 +35,7 @@ const App = () => {
           <Route path='landscapedesign' element={<Suspense fallback={<LoadingSpinner/>}><LandscapeDesign/></Suspense>}/>
           <Route path='cladding' element={<Suspense fallback={<LoadingSpinner/>}><Cladding/></Suspense>}/>
           <Route path='projects'element={<Suspense fallback={<LoadingSpinner/>}><Projects/></Suspense>}/>
+          <Route path='inquiryform' element={<Suspense fallback={<LoadingSpinner/>}><InquiryForm/></Suspense>}/>
       </Route>
       )
     )
