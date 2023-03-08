@@ -17,7 +17,7 @@ const Header = ()=>{
 		<input type="checkbox" id="toggler"/>
 
 		<div className="nav-container">
-			<Link to='/' className="logo"><img src={Images.logo}/></Link>
+			<Link to='/' className="logo"><img src={Images.logo} alt=''/></Link>
 			<Link to='/' className="nav-brandy">JH Pro</Link>
 		
 			<ul className="nav-ul">
@@ -75,44 +75,44 @@ const Header = ()=>{
 							</ul>
 							<ul className="projects-images">
 								<li className="project-img">
-									<img src={Images.d1} className="d-img"/>
+									<img src={Images.d1} className="d-img" alt=''/>
 									<h5>Smantha Green</h5>
-									<Link to='/projects'>See More <img src={Images.arrow} className="arrow"/></Link>
+									<Link to='/projects'>See More <img src={Images.arrow} className="arrow" alt=''/></Link>
 								</li>
 								<li className="project-img">
-									<img src={Images.d2} className="d-img"/>
+									<img src={Images.d2} className="d-img" alt=''/>
 									<h5>Stucco White</h5>
-									<a role="button">See More <img src={Images.arrow} className="arrow"/></a>
+									<Link to='/projects'>See More <img src={Images.arrow} className="arrow" alt=''/></Link>
 								</li>
 								<li className="project-img">
-									<img src={Images.d3} className="d-img"/>
+									<img src={Images.d3} className="d-img" alt=''/>
 									<h5>Office White</h5>
-									<a role="button">See More <img src={Images.arrow}className="arrow"/></a>
+									<Link to='/projects'>See More <img src={Images.arrow}className="arrow" alt=''/></Link>
 								</li>
 								<li className="project-img">
-									<img src={Images.d4} className="d-img"/>
+									<img src={Images.d4} className="d-img" alt=''/>
 									<h5>Minimal White</h5>
-									<a role="button">See More <img src={Images.arrow} className="arrow"/></a>
+									<Link to='/projects'>See More <img src={Images.arrow} className="arrow" alt=''/></Link>
 								</li>
 								<li className="project-img">
-									<img src={Images.d5} className="d-img"/>
+									<img src={Images.d5} className="d-img" alt=''/>
 									<h5>Vintage Brown</h5>
-									<a role="button">See More <img src={Images.arrow} className="arrow"/></a>
+									<Link to='/projects'>See More <img src={Images.arrow} className="arrow" alt=''/></Link>
 								</li>
 								<li className="project-img">
-									<img src={Images.d6} className="d-img"/>
+									<img src={Images.d6} className="d-img" alt=''/>
 									<h5>Blue Reflict</h5>
-									<a role="button">See More <img src={Images.arrow} className="arrow"/></a>
+									<Link to='/projects'>See More <img src={Images.arrow} className="arrow" alt=''/></Link>
 								</li>
 								<li className="project-img">
-									<img src={Images.d7} className="d-img"/>
+									<img src={Images.d7} className="d-img" alt=''/>
 									<h5>Stone Bar</h5>
-									<a role="button">See More <img src={Images.arrow} className="arrow"/></a>
+									<Link to='/projects'>See More <img src={Images.arrow} className="arrow" alt=''/></Link>
 								</li>
 								<li className="project-img">
-									<img src={Images.d8} className="d-img"/>
+									<img src={Images.d8} className="d-img" alt=''/>
 									<h5>Summer Beige</h5>
-									<a role="button">See More <img src={Images.arrow} className="arrow"/></a>
+									<Link to='/projects'>See More <img src={Images.arrow} className="arrow" alt=''/></Link>
 								</li>
 							</ul>
 						</li>
