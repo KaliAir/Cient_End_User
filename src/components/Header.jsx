@@ -122,7 +122,7 @@ const Header = ()=>{
 
 				</li>
 
-				<li className="ul-items"><a href="#home4">About </a></li>
+				<li className="ul-items"><NavLink to='/about'>About </NavLink></li>
 		
 				<li className="ul-items"><NavLink to='/inquiryform'><TbBuildingWarehouse/> Inquiry</NavLink></li>
 

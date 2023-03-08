@@ -1,0 +1,48 @@
+.about-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  border: 2px solid #ccc;
+  box-shadow: 0px 0px 5px 2px #ccc;
+  background: #60b1ab;
+}
+
+.treasure{
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+  color: #60b1ab;
+}
+
+.about-container{
+  background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+}
+
+.h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.h2 {
+  font-size: 1.5em;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.p {
+  margin-bottom: 20px;
+}
+
+.a {
+  color: #1E90FF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.a:hover {
+  text-decoration: underline;
+}

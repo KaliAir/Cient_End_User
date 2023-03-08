@@ -7,7 +7,7 @@ import {ImFacebook2} from 'react-icons/im'
 import {FaTwitterSquare} from 'react-icons/fa'
 import {ImInstagram} from 'react-icons/im'
 import {GrMapLocation} from 'react-icons/gr'
-import {FcAbout} from 'react-icons/fc'
+import {GiTreasureMap} from 'react-icons/gi'
 
 
 const Footer = ()=>{
@@ -87,7 +87,7 @@ const Footer = ()=>{
 				</div>
 				<div className="item5">
 					<h2>Information</h2>
-					<a href="#"><FcAbout/>  About Us</a>
+					<GiTreasureMap className='treasure'/>
 					<a href="https://www.google.com/maps/@10.364158,123.6169869,3a,75y,327.62h,80.8t/data=!3m6!1e1!3m4!1s8Sl6yvKypVZRHHLAZeSuow!2e0!7i16384!8i8192" target="_blank" rel="noopener noreferrer"><GrMapLocation/>  Office Location</a>
 				</div>
 				<div className="item5">
