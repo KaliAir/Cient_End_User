@@ -2,7 +2,6 @@ import React from 'react'
 import {HiArrowCircleDown} from 'react-icons/hi'
 import Images from '../images/index'
 import {NavLink, Link} from 'react-router-dom'
-import ModalForm from './ModalForm'
 import {TbBuildingWarehouse} from 'react-icons/tb'
 import {useImages} from '../Context/ImagesContext'
 

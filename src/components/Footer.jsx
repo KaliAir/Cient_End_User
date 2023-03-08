@@ -1,7 +1,5 @@
 import React from 'react'
 import Images from '../images/index'
-import {useState} from 'react'
-import {AiOutlineCloseCircle} from 'react-icons/ai'
 import {ImFacebook2} from 'react-icons/im'
 import {FaTwitterSquare} from 'react-icons/fa'
 import {ImInstagram} from 'react-icons/im'
@@ -12,42 +10,7 @@ import {HiOutlinePhone} from 'react-icons/hi'
 
 
 const Footer = ()=>{
-	const API = 'http://localhost:8000/api'
 	
-	const[name,setName]=useState('')
-	const[lastname,setLastName]=useState('')
-	const[email,setEmail]=useState('')
-	const[inquiry,setInquiry]=useState('')
-	const[phonenumber, setPhoneNumber]=useState('')
-
-
-	const handleSubmit = (e)=>{
-		e.preventDefault();
-		 const inqData = {name,lastname,email,inquiry,phonenumber};
-	
-
-	fetch(`${API}/inquiry`,{
-		method:"POST",
-		headers:{
-			'Content-Type': 'application/json'
-		},
-		body: JSON.stringify(inqData)
-	})
-	.then((res)=>{
-		alert('Inquiry Send Successfuly');
-		setName('')
-		setLastName('')
-		setEmail('')
-		setInquiry('')
-		setPhoneNumber('')
-		window.location.reload();
-	})
-	.catch((err)=>{
-		console.log(err.message);
-	})
-
-	}
-
 	
 	return (
 
@@ -56,21 +19,21 @@ const Footer = ()=>{
 			<div className="item4-container">
 				<div className="contact-item">
 					<div className="contact1">
-						<a role="button"><img src={Images.phone}/></a>
+						<span><img src={Images.phone} alt=''/></span>
 						<p>CALL TODAY</p>
 						<p>+639266366905</p>
 					</div>
 				</div>
 				<div className="contact-item">
 					<div className="contact1">
-						<a role="button"><img src={Images.tele}/></a>
+						<span><img src={Images.tele} alt=''/></span>
 						<p>FAX US</p>
 						<p>02-8123-4567</p>
 					</div>
 				</div>
 				<div className="contact-item">
 					<div className="contact1">
-						<a role="button"><img src={Images.invelope}/></a>
+						<span><img src={Images.invelope} alt=''/></span>
 						<p>EMAIL US</p>
 						<p className="niko">nikomagloslos@gmail.com</p>
 					</div>
@@ -93,40 +56,16 @@ const Footer = ()=>{
 				</div>
 				<div className="item5">
 					<h2>Social Page Links</h2>
-					<a href="https://web.facebook.com/profile.php?id=100087252951498" target="_blank"><ImFacebook2/>  Facebook</a>
-					<a role="button"><FaTwitterSquare/>  Twitter</a>
-					<a role="button"><ImInstagram/>  Instagram</a>
+					<a href="https://web.facebook.com/profile.php?id=100087252951498" rel="noreferrer" target="_blank"><ImFacebook2/>  Facebook</a>
+					<a href='https://twitter.com'><FaTwitterSquare/>  Twitter</a>
+					<a href='https://www.instagram.com'><ImInstagram/>  Instagram</a>
 				</div>
 			</div>
 		</div>
 			<div className="scrollup">
-		<a href="#nav">&#10163;</a>
-	</div>
-		<input type="checkbox" name="" id="modal"/>
-		<div className="contact-container">
-			<label htmlFor="modal" className="nav-contact-btn"><AiOutlineCloseCircle style={{fontSize:'2rem'}}/></label>
-			<h5 className="contact-header">Get in touch with us</h5>
-
-			<form method="POST" className="modal-form" onSubmit={handleSubmit}>
-				<input type="text" name="name" placeholder="First Name" className="fn-input" value={name} onChange={(e)=> setName(e.target.value)}/>
-				<input type="text" name="lastname" placeholder="Last Name" className="ln-input" value={lastname} onChange={(e)=> setLastName(e.target.value)}/>
-				<input type="email" name="email" placeholder="Email" className="email-input" value={email} onChange={(e)=> setEmail(e.target.value)}/>
-				<select className="select-concern" name="inquiry" value={inquiry} onChange={(e)=> setInquiry(e.target.value)}>
-					<option >Interior Design</option>
-					<option >Exterior Design</option>
-					<option >Roofing</option>
-					<option >Land Scaping</option>
-					<option >Fencing</option>
-					<option >Swimming Pools</option>
-					<option >Smart Home</option>
-					<option >Other</option>
-				</select>
-				<input type="text" name="phonenumber" placeholder="Phone Number" className="phone-number" value={phonenumber} onChange={(e)=> setPhoneNumber(e.target.value)}/>
-				<button htmlFor='modal' type='submit' className="modal-btn">Submit</button>
-			</form>
-
-			<p>By clicking on <span className="privaciy-submit">Submit</span>,you acknowledge having read our <a role="button">Privacy notice</a></p>
-		</div>
+				<a href="#nav">&#10163;</a>
+	        </div>
+		
 		</>
 
 		)

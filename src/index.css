@@ -811,14 +811,14 @@ nav {
 
 }
 
-.contact1 a {
+.contact1 span {
   grid-row: 1/3;
   justify-self: end;
   align-self: center;
   padding-right: 1rem;
 }
 
-.contact1 a img {
+.contact1 span img {
   width: 3rem;
   height: 3rem;
 }
