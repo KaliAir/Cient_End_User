@@ -83,37 +83,37 @@ const Header = ()=>{
 								<li className="project-img">
 									<img src={Images.d2} className="d-img"/>
 									<h5>Stucco White</h5>
-									<a href="#">See More <img src={Images.arrow} className="arrow"/></a>
+									<a role="button">See More <img src={Images.arrow} className="arrow"/></a>
 								</li>
 								<li className="project-img">
 									<img src={Images.d3} className="d-img"/>
 									<h5>Office White</h5>
-									<a href="#">See More <img src={Images.arrow}className="arrow"/></a>
+									<a role="button">See More <img src={Images.arrow}className="arrow"/></a>
 								</li>
 								<li className="project-img">
 									<img src={Images.d4} className="d-img"/>
 									<h5>Minimal White</h5>
-									<a href="#">See More <img src={Images.arrow} className="arrow"/></a>
+									<a role="button">See More <img src={Images.arrow} className="arrow"/></a>
 								</li>
 								<li className="project-img">
 									<img src={Images.d5} className="d-img"/>
 									<h5>Vintage Brown</h5>
-									<a href="#">See More <img src={Images.arrow} className="arrow"/></a>
+									<a role="button">See More <img src={Images.arrow} className="arrow"/></a>
 								</li>
 								<li className="project-img">
 									<img src={Images.d6} className="d-img"/>
 									<h5>Blue Reflict</h5>
-									<a href="#">See More <img src={Images.arrow} className="arrow"/></a>
+									<a role="button">See More <img src={Images.arrow} className="arrow"/></a>
 								</li>
 								<li className="project-img">
 									<img src={Images.d7} className="d-img"/>
 									<h5>Stone Bar</h5>
-									<a href="#">See More <img src={Images.arrow} className="arrow"/></a>
+									<a role="button">See More <img src={Images.arrow} className="arrow"/></a>
 								</li>
 								<li className="project-img">
 									<img src={Images.d8} className="d-img"/>
 									<h5>Summer Beige</h5>
-									<a href="#">See More <img src={Images.arrow} className="arrow"/></a>
+									<a role="button">See More <img src={Images.arrow} className="arrow"/></a>
 								</li>
 							</ul>
 						</li>

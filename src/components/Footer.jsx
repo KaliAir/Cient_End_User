@@ -1,7 +1,6 @@
 import React from 'react'
 import Images from '../images/index'
 import {useState} from 'react'
-import {useNavigate} from 'react-router-dom'
 import {AiOutlineCloseCircle} from 'react-icons/ai'
 import {ImFacebook2} from 'react-icons/im'
 import {FaTwitterSquare} from 'react-icons/fa'
@@ -57,21 +56,21 @@ const Footer = ()=>{
 			<div className="item4-container">
 				<div className="contact-item">
 					<div className="contact1">
-						<a href="#"><img src={Images.phone}/></a>
+						<a role="button"><img src={Images.phone}/></a>
 						<p>CALL TODAY</p>
 						<p>+639266366905</p>
 					</div>
 				</div>
 				<div className="contact-item">
 					<div className="contact1">
-						<a href="#"><img src={Images.tele}/></a>
+						<a role="button"><img src={Images.tele}/></a>
 						<p>FAX US</p>
 						<p>02-8123-4567</p>
 					</div>
 				</div>
 				<div className="contact-item">
 					<div className="contact1">
-						<a href="#"><img src={Images.invelope}/></a>
+						<a role="button"><img src={Images.invelope}/></a>
 						<p>EMAIL US</p>
 						<p className="niko">nikomagloslos@gmail.com</p>
 					</div>
@@ -95,8 +94,8 @@ const Footer = ()=>{
 				<div className="item5">
 					<h2>Social Page Links</h2>
 					<a href="https://web.facebook.com/profile.php?id=100087252951498" target="_blank"><ImFacebook2/>  Facebook</a>
-					<a href="#"><FaTwitterSquare/>  Twitter</a>
-					<a href="#"><ImInstagram/>  Instagram</a>
+					<a role="button"><FaTwitterSquare/>  Twitter</a>
+					<a role="button"><ImInstagram/>  Instagram</a>
 				</div>
 			</div>
 		</div>
@@ -126,7 +125,7 @@ const Footer = ()=>{
 				<button htmlFor='modal' type='submit' className="modal-btn">Submit</button>
 			</form>
 
-			<p>By clicking on <span className="privaciy-submit">Submit</span>,you acknowledge having read our <a href="#">Privacy notice</a></p>
+			<p>By clicking on <span className="privaciy-submit">Submit</span>,you acknowledge having read our <a role="button">Privacy notice</a></p>
 		</div>
 		</>
 
