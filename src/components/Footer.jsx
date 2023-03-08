@@ -8,6 +8,8 @@ import {FaTwitterSquare} from 'react-icons/fa'
 import {ImInstagram} from 'react-icons/im'
 import {GrMapLocation} from 'react-icons/gr'
 import {GiTreasureMap} from 'react-icons/gi'
+import {FcPhoneAndroid} from 'react-icons/fc'
+import {HiOutlinePhone} from 'react-icons/hi'
 
 
 const Footer = ()=>{
@@ -18,7 +20,7 @@ const Footer = ()=>{
 	const[email,setEmail]=useState('')
 	const[inquiry,setInquiry]=useState('')
 	const[phonenumber, setPhoneNumber]=useState('')
-	const navigate = useNavigate()
+
 
 	const handleSubmit = (e)=>{
 		e.preventDefault();
@@ -82,8 +84,8 @@ const Footer = ()=>{
 				<div className="item5">
 					<h2>Contact Us</h2>
 					<p>6038 Cebu, Toledo city/matab-ang</p>
-					<p><i className="fa-solid fa-phone"></i> 09266366905</p>
-					<p><i className="fa-solid fa-envelope"></i> 02-6666-9999</p>
+					<p><FcPhoneAndroid/> 09266366905</p>
+					<p><HiOutlinePhone/> 02-6666-9999</p>
 				</div>
 				<div className="item5">
 					<h2>Information</h2>
