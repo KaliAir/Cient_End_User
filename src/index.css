@@ -2004,6 +2004,15 @@ header {
   border: 1px solid rgb(0, 0, 0, .4);
   box-shadow: rgba(0, 0, 0, 0.5) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
+
+.table-collection .table-container{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 300px 300px;
+  grid-gap: 30px;
+
+}
 }
 
 @media screen and (max-width: 800px) {
@@ -2039,6 +2048,14 @@ header {
   border-radius: 5px;
   border: 1px solid rgb(0, 0, 0, .4);
   box-shadow: rgba(0, 0, 0, 0.5) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.table-collection .table-container{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 300px;
+  grid-gap: 30px;
+
 }
 }
 
@@ -2156,21 +2173,5 @@ header {
   margin: 0;
   color: #60b1ab;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
