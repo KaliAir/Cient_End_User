@@ -434,8 +434,8 @@ nav {
   grid-auto-columns: 70%;
   column-gap: 10px;
   overflow-x: scroll;
-  overflow-y: hidden;
-  /*overscroll-behavior-inline: contain;*/
+/*  overflow-y: hidden;*/
+  overscroll-behavior-inline: contain;
   -webkit-overflow-scrolling: touch;
   cursor: all-scroll;
 }
@@ -1099,6 +1099,10 @@ nav {
     line-height: 35px;
   }
 
+  .ul1-drop{display: none;}
+
+  .project-position {display: none;}
+
 }
 
 @media (max-width: 680px) {
@@ -1695,6 +1699,7 @@ header {
     bottom: 0;
     transform: rotate(-90deg);
   }
+
 }
 
 /*----------------------------LOGIN DROP DOWN-----------------*/
