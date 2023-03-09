@@ -10,6 +10,13 @@ import {useImages} from '../Context/ImagesContext'
 const Header = ()=>{
 
     const {handleShow,handleChairs,handleRoof,handleCladding} = useImages()
+
+
+    const toggleMenu = ()=>{
+    	let toggler = document.querySelector('#toggler');
+    	toggler.checked = !toggler.checked;
+    }
+
 	return (
 	
 <nav id="nav">
@@ -22,9 +29,9 @@ const Header = ()=>{
 		
 			<ul className="nav-ul">
 
-				<li className="ul-items"><NavLink to='/'>Home</NavLink></li>
+				<li className="ul-items"><NavLink to='/' onClick={toggleMenu}>Home</NavLink></li>
 	
-				<li className="ul-items"><NavLink to='/designs'>Designs</NavLink><HiArrowCircleDown/>
+				<li className="ul-items"><NavLink to='/designs' onClick={toggleMenu}>Designs</NavLink><HiArrowCircleDown/>
 					<ul className="ul1-drop">
 						<li className="ul1-items">
 							<ul className="design-section1">
@@ -64,7 +71,7 @@ const Header = ()=>{
 				</li>
 
 
-				<li className="ul-items"><NavLink to='/projects'>Projects</NavLink><HiArrowCircleDown/>
+				<li className="ul-items"><NavLink to='/projects' onClick={toggleMenu}>Projects</NavLink><HiArrowCircleDown/>
 					<ul className="project-position">
 		
 						<li className="position1">
@@ -121,9 +128,9 @@ const Header = ()=>{
 
 				</li>
 
-				<li className="ul-items"><NavLink to='/about'>About </NavLink></li>
+				<li className="ul-items"><NavLink to='/about' onClick={toggleMenu}>About </NavLink></li>
 		
-				<li className="ul-items"><NavLink to='/inquiryform'><TbBuildingWarehouse/> Inquiry</NavLink></li>
+				<li className="ul-items"><NavLink to='/inquiryform' onClick={toggleMenu}><TbBuildingWarehouse/> Inquiry</NavLink></li>
 
 			</ul>
 	
